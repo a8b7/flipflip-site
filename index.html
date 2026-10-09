@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- 邮箱已填:support@a8b7.com。剩余动作:两个文件部署到 GitHub Pages 后,
-     index.html 填进 App Store Connect 的「支持网址」,privacy.html 填进「隐私政策网址」 -->
+<!-- 支持页(中英双语)。源码在本仓库 docs/website/,线上部署于公开仓库 a8b7/flipflip-site(GitHub Pages)。
+     ASC「支持网址」填:https://a8b7.github.io/flipflip-site/ -->
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FlipFlip 翻翻 · 支持与帮助</title>
+<title>FlipFlip 翻翻 · 支持与帮助 / Support</title>
 <style>
   :root { --brand: #FF4D66; --brand2: #FF8A50; --ink: #2b2430; --sub: #6f6675; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -30,8 +30,11 @@
     margin-bottom: 22px; box-shadow: 0 2px 14px rgba(60,40,50,.06);
   }
   h2 { font-size: 20px; margin-bottom: 14px; color: var(--brand); }
+  h2 .en-t { font-size: 14px; color: var(--sub); font-weight: 500; margin-left: 8px; }
   ul { padding-left: 22px; }
   li { margin: 8px 0; }
+  .en { color: var(--sub); font-size: 14px; display: block; margin-top: 2px; }
+  .en b { color: var(--ink); }
   .muted { color: var(--sub); font-size: 14px; }
   a.btn {
     display: inline-block; margin-top: 12px; padding: 10px 26px; border-radius: 999px;
@@ -45,35 +48,46 @@
   <div class="hero">
     <div class="icon">🃏</div>
     <h1>FlipFlip 翻翻</h1>
-    <p>翻翻旧照,一滑定去留</p>
+    <p>翻翻旧照,一滑定去留<br><span style="font-size:14px;opacity:.85">Swipe through old photos — keep or let go</span></p>
   </div>
   <main>
     <section>
-      <h2>快速上手</h2>
+      <h2>快速上手<span class="en-t">Quick Start</span></h2>
       <ul>
-        <li><b>上滑</b> —— 把照片放入待删除清单</li>
-        <li><b>下滑</b> —— 收藏 / 取消收藏</li>
-        <li><b>左滑 / 右滑</b> —— 下一张 / 上一张</li>
-        <li><b>点按</b> —— 查看大图</li>
-        <li><b>右上角 ⚙</b> —— 设置翻片范围与规则</li>
+        <li><b>上滑</b> —— 把照片放入待删除清单
+          <span class="en"><b>Swipe up</b> — add the photo to the delete list</span></li>
+        <li><b>下滑</b> —— 收藏 / 取消收藏
+          <span class="en"><b>Swipe down</b> — favorite / unfavorite</span></li>
+        <li><b>左滑 / 右滑</b> —— 下一张 / 上一张
+          <span class="en"><b>Swipe left / right</b> — next / previous photo</span></li>
+        <li><b>点按</b> —— 查看大图
+          <span class="en"><b>Tap</b> — view full screen</span></li>
+        <li><b>右上角 ⚙</b> —— 设置翻片范围与规则
+          <span class="en"><b>⚙ (top-right)</b> — set deck range &amp; rules</span></li>
       </ul>
       <p class="muted">删除会先进入待删清单,批量确认后才会真正删除;30 天内可在系统相册「最近删除」恢复。</p>
+      <p class="en">Deletions go to a pending list first and only take effect after you confirm them in bulk. Deleted photos remain in the system “Recently Deleted” album for 30 days.</p>
     </section>
     <section>
-      <h2>常见问题</h2>
+      <h2>常见问题<span class="en-t">FAQ</span></h2>
       <ul>
-        <li><b>我的照片会上传吗?</b><br>不会。FlipFlip 完全在本地运行,没有服务器、没有账号、没有统计 SDK。</li>
-        <li><b>误标了怎么办?</b><br>在待删清单里左滑即可移出;已删除的照片在系统「最近删除」保留 30 天。</li>
-        <li><b>只能看到部分照片?</b><br>系统授权为「已选照片」时,可在顶部横幅点「选择更多照片」扩充范围。</li>
+        <li><b>我的照片会上传吗?</b><br>不会。FlipFlip 完全在本地运行,没有服务器、没有账号、没有统计 SDK。
+          <span class="en"><b>Will my photos be uploaded?</b><br>No. FlipFlip runs entirely on your device — no servers, no accounts, no analytics SDKs.</span></li>
+        <li><b>误标了怎么办?</b><br>在待删清单里左滑即可移出;已删除的照片在系统「最近删除」保留 30 天。
+          <span class="en"><b>Marked something by mistake?</b><br>Swipe left in the pending list to remove it. Deleted photos stay in “Recently Deleted” for 30 days.</span></li>
+        <li><b>只能看到部分照片?</b><br>系统授权为「已选照片」时,可在顶部横幅点「选择更多照片」扩充范围。
+          <span class="en"><b>Only seeing some photos?</b><br>If access is set to “Selected Photos”, tap “Select More Photos” in the banner at the top to expand it.</span></li>
       </ul>
     </section>
     <section>
-      <h2>联系我们</h2>
+      <h2>联系我们<span class="en-t">Contact Us</span></h2>
       <p>遇到问题或有建议,欢迎来信:</p>
+      <p class="en">Questions or feedback? Email us:</p>
       <a class="btn" href="mailto:support@a8b7.com">support@a8b7.com</a>
       <p class="muted">通常在 48 小时内回复。</p>
+      <p class="en">We usually reply within 48 hours.</p>
     </section>
   </main>
-  <footer>© 2026 FlipFlip · <a href="privacy.html" style="color:inherit">隐私政策</a></footer>
+  <footer>© 2026 FlipFlip · <a href="privacy.html" style="color:inherit">隐私政策 Privacy Policy</a></footer>
 </body>
 </html>
