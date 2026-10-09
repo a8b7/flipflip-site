@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- 邮箱已填:support@a8b7.com。剩余动作:两个文件部署到 GitHub Pages 后,
+     index.html 填进 App Store Connect 的「支持网址」,privacy.html 填进「隐私政策网址」 -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlipFlip 翻翻 · 支持与帮助</title>
+<style>
+  :root { --brand: #FF4D66; --brand2: #FF8A50; --ink: #2b2430; --sub: #6f6675; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+    color: var(--ink); background: #faf8f6; line-height: 1.75;
+  }
+  .hero {
+    background: linear-gradient(135deg, var(--brand), var(--brand2));
+    color: #fff; text-align: center; padding: 72px 24px 56px;
+  }
+  .hero h1 { font-size: 34px; letter-spacing: 1px; }
+  .hero p { margin-top: 10px; opacity: .92; font-size: 17px; }
+  .hero .icon {
+    width: 88px; height: 88px; border-radius: 22px; margin: 0 auto 18px;
+    background: #fff; display: flex; align-items: center; justify-content: center;
+    font-size: 44px; box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+  section {
+    background: #fff; border-radius: 18px; padding: 28px 28px;
+    margin-bottom: 22px; box-shadow: 0 2px 14px rgba(60,40,50,.06);
+  }
+  h2 { font-size: 20px; margin-bottom: 14px; color: var(--brand); }
+  ul { padding-left: 22px; }
+  li { margin: 8px 0; }
+  .muted { color: var(--sub); font-size: 14px; }
+  a.btn {
+    display: inline-block; margin-top: 12px; padding: 10px 26px; border-radius: 999px;
+    background: linear-gradient(135deg, var(--brand), var(--brand2));
+    color: #fff; text-decoration: none; font-weight: 600;
+  }
+  footer { text-align: center; color: var(--sub); font-size: 13px; padding-bottom: 40px; }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="icon">🃏</div>
+    <h1>FlipFlip 翻翻</h1>
+    <p>翻翻旧照,一滑定去留</p>
+  </div>
+  <main>
+    <section>
+      <h2>快速上手</h2>
+      <ul>
+        <li><b>上滑</b> —— 把照片放入待删除清单</li>
+        <li><b>下滑</b> —— 收藏 / 取消收藏</li>
+        <li><b>左滑 / 右滑</b> —— 下一张 / 上一张</li>
+        <li><b>点按</b> —— 查看大图</li>
+        <li><b>右上角 ⚙</b> —— 设置翻片范围与规则</li>
+      </ul>
+      <p class="muted">删除会先进入待删清单,批量确认后才会真正删除;30 天内可在系统相册「最近删除」恢复。</p>
+    </section>
+    <section>
+      <h2>常见问题</h2>
+      <ul>
+        <li><b>我的照片会上传吗?</b><br>不会。FlipFlip 完全在本地运行,没有服务器、没有账号、没有统计 SDK。</li>
+        <li><b>误标了怎么办?</b><br>在待删清单里左滑即可移出;已删除的照片在系统「最近删除」保留 30 天。</li>
+        <li><b>只能看到部分照片?</b><br>系统授权为「已选照片」时,可在顶部横幅点「选择更多照片」扩充范围。</li>
+      </ul>
+    </section>
+    <section>
+      <h2>联系我们</h2>
+      <p>遇到问题或有建议,欢迎来信:</p>
+      <a class="btn" href="mailto:support@a8b7.com">support@a8b7.com</a>
+      <p class="muted">通常在 48 小时内回复。</p>
+    </section>
+  </main>
+  <footer>© 2026 FlipFlip · <a href="privacy.html" style="color:inherit">隐私政策</a></footer>
+</body>
+</html>
